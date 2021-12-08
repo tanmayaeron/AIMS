@@ -78,6 +78,14 @@ CREATE TABLE batches(
     FOREIGN KEY(adv_id) REFERENCES instructor(id)
 );
 
+GRANT ALL
+ON batches
+TO deanoffice;
+
+GRANT SELECT
+ON batches
+TO faculty, student; 
+
 CREATE TABLE course_offering(
     id INTEGER,
     course_id char(5) NOT NULL,
