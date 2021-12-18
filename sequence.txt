@@ -1,5 +1,6 @@
 init
 tables
+time_table
 tickets
 batch_curriculum
 student
